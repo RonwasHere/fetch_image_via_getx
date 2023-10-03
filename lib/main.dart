@@ -1,4 +1,4 @@
-import 'package:fetch_image_via_getx/home_view.dart';
+import 'package:fetch_image_via_getx/view/home_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
