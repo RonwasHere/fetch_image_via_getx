@@ -8,7 +8,8 @@ class PhotoModel {
 
   PhotoModel.fromJson(Map<String, dynamic> json) {
     id = json['id'];
-    createdAt = json['createdAt'];
+    createdAt = json['created_at'];
+    //createdAt = json['createdAt]; ==> before i type like this and get error 
     color = json['color'];
     urls = json['urls'];
   }

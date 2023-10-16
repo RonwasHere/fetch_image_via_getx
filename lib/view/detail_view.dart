@@ -1,5 +1,3 @@
-// ignore_for_file: use_key_in_widget_constructors
-
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -7,7 +5,7 @@ import 'package:loading_animation_widget/loading_animation_widget.dart';
 import 'package:fetch_image_via_getx/controllers/simple_ui_controller.dart';
 
 class DetailView extends StatelessWidget {
-  DetailView({required this.index});
+  DetailView({super.key, required this.index});
   int index;
 
   SimpleUiController simpleUiController = Get.find<SimpleUiController>();
@@ -56,9 +54,9 @@ class DetailView extends StatelessWidget {
                 Positioned(
                   bottom: 10,
                   child: Text(
-                    simpleUiController.photo[index].createdAt ?? "nulll"
-                        .substring(0, 4)
-                        .replaceAll("-", " / "),
+                    
+                    simpleUiController.photo[index].createdAt ??
+                        "nulll".substring(0, 5).replaceAll("-", " / "),
                     style: const TextStyle(color: Colors.white, fontSize: 15),
                   ),
                 ),
